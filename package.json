@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "firebase": "^7.19.1",
+    "jquery": "^3.5.1",
     "vue": "^2.6.11",
     "vuex": "^3.4.0"
   },
@@ -29,7 +31,8 @@
   "eslintConfig": {
     "root": true,
     "env": {
-      "node": true
+      "node": true,
+      "jquery": true
     },
     "extends": [
       "plugin:vue/essential",
@@ -38,7 +41,14 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "max-len": [
+        "error",
+        {
+          "code": 300
+        }
+      ]
+    }
   },
   "browserslist": [
     "> 1%",
